@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+<body bgcolor="yellow">
+    <form>
+        <fieldset>
+            <legend><h1>REGISTRATION FORM:</h1></legend>
+        <label for="fname">FIRST NAME:</label>
+        <br>
+        <input type="text" id="fname" required>
+        <br><br>
+        <label for="email">EMAIL ID:</label>
+        <br>
+        <input type="text" id="email" placeholder="ex:abc@gmail.com" required>
+        <br><br>
+        <label for="mobile number">MOBILE NUMBER:</label>
+        <br>
+        <input type="number" id="mobile" required>
+        <p>ENTER GENDER:</p>
+        <input type="radio" id="male" name="gender" value="user is male" required >
+        <label for="male"><img src="../DAY6.html/m1.jpeg"></label><br>
+        <input type="radio" id="female" name="gender" value="user is female" required>
+        <label for="female"><img src="../DAY6.html/f.jpeg"></label><br>
+        <input type="radio" id="others" name="gender" value="user is others" required>
+        <label for="others"><img src="../DAY6.html/o1.jpeg"></label>
+        <br><br>
+        <label for="color">CHOOSE COLOR:</label><br>
+        <input type="color">
+        <br><br>
+        <label for="file">CHOOSE FILE:</label><br>
+        <input type="file" required><br><br>
+        <label for="address">ADDRESS</label><br>
+        <input type="address"><br><br>
+        <label for="datetime-local">DATE&TIME:</label>
+        <br>
+        <input type="datetime-local">
+        <br><br>
+        <label for="password">PASSWORD:</label>
+        <br>
+        <input type="password" id="pssw" name="password" pattern="{8}">
+        <input type="submit" required>
+        <input type="reset">
+        </fieldset>
+    </form>
+    
+</body>
+</html>
