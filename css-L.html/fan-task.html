@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            height: 60vh;
+            width: 30vw;
+            border: 2px solid black;
+            border-radius: 100px;
+            padding: 10px;
+            display: grid;
+            gap: 5px;
+            justify-content: center;
+            background-color: aqua;
+            animation-name: fan;
+            animation-duration: 10s;
+        }
+    
+        @keyframes fan {
+           10% {background-color: red;}
+           20% {background-color: aquamarine;}
+           30% {background-color: blue;}
+           40% {background-color: darkgoldenrod;}
+           50% {background-color: chartreuse;}
+        }
+        button{
+            color: red;
+            border-radius: 100px;
+            animation-name: button;
+            animation-duration: 10s;
+        }
+        @keyframes button{
+            10% {background-color: coral;}
+            20% {background-color: darkorchid;}
+            30% {background-color: deepskyblue;}
+        }
+    
+        #button1:active~img{
+            transition: 1.0s;
+            clip-path: circle(40%);
+            transform: rotate(3600deg);
+        }
+        #button2:active~img{
+            transition: 0.5s;
+            clip-path: circle(40%);
+            transform: rotate(7200deg);
+        }
+        #button3:active~img{
+            transition: 0.2s;
+            clip-path: circle(40%);
+            transform: rotate(10800deg);
+            background-color: brown;
+        }
+        img{
+            border: 2px solid black;
+            width: 50%;
+            border-radius: 2px;
+            position: relative;
+            left: 45px;
+            animation-name: img;
+            animation-duration: 5s;
+            /* background-color: bisque; */
+        }
+        @keyframes img{
+            10% {background-color: bisque;}
+            20% {background-color: cadetblue;}
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <button id="button1">speed1</button>
+        <button id="button2">speed2</button>
+        <button id="button3">speed3</button>
+        <img id="img" src="./download.png" width="40%" style="background-color: aquamarine;">
+    </main>
+</body>
+</html>

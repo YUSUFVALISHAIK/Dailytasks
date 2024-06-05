@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background-color: cyan;
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            gap: 5px;
+            padding: 10px;
+        }
+        .child{
+            background-color: blanchedalmond;
+
+        }
+        .c5{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class=" main">
+        <div class="child c1" style="background-color: chartreuse;">A</div>
+        <div class="child c2" style="background-color: crimson;">B</div>
+        <div class="child c3" style="background-color: darkgoldenrod;">C</div>
+        <div class="child c4" style="background-color:indigo;">D</div>
+        <div class="child c5" style="background-color: cornflowerblue;">E</div>
+        <div class="child c6" style="background-color: darkkhaki;">F</div>
+    </div>
+</body>
+</html>

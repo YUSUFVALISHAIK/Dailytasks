@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .md{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            transition-duration: 5s;
+            transition-delay: 2s;
+        }
+        #trns:checked ~ .md{
+            transform: translate(30px,50px);
+            border-radius: 100%;
+            transform: skew(360deg);
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" id="trns">trns</button>
+    <div class="md"></div>
+</body>
+</html>
